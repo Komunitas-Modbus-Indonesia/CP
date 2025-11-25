@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="readme-assets/agency-logo.png" width="120">
+    <img src="readme-assets/agency-logo.png" width="150">
 </p>
 
 # [Foxy - Vue Agency Landing Page](https://ryanbalieiro.github.io/vue-agency-landing-page-template/)
