@@ -271,10 +271,19 @@ div.foxy-loader-content {
 }
 
 div.image-view-logo {
-    width: 60px;
-    height: 60px;
     z-index: 10;
     opacity: 0;
+
+    width: 75px;
+    height: 75px;
+    @include media-breakpoint-down(lg) {
+        width: 68px;
+        height: 68px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 60px;
+        height: 60px;
+    }
 
     &-animated {
         animation: popIn 0.3s ease-out forwards;
@@ -299,7 +308,7 @@ div.foxy-loader-progress-display {
     }
 
     .foxy-loader-progress-bar {
-        max-width: 55px;
+        max-width: 105px;
         margin: 0 auto;
     }
 }

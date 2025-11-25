@@ -5,8 +5,8 @@
             <li v-for="(route, index) in breadcrumbItems"
                 class="breadcrumb-link-item text-4">
                 <!-- First Item -->
-                <router-link v-if="index === 0" :to="route.path">
-                    <i class="me-1" :class="route.props?.default?.faIcon"/>
+                <router-link v-if="index === 0 && route.path === '/'" :to="route.path">
+                    <i class="me-1 fa-solid fa-home"/>
                 </router-link>
 
                 <!-- Other Items -->

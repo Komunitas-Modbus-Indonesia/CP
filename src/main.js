@@ -15,7 +15,7 @@ const router = createRouter({
             component: HomePage,
             props: {
                 label: "Home",
-                faIcon: "fa-solid fa-home",
+                faIcon: "pi pi-home",
                 inPageNavbar: true,
                 shouldAlwaysPreload: true,
                 breadcrumbs: []
