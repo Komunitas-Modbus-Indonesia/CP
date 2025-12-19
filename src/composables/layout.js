@@ -30,6 +30,8 @@ export function useLayout() {
         bodyStyle.width = window.__savedBodyStyle.width
         bodyStyle.overflow = window.__savedBodyStyle.overflow
         delete window.__savedBodyStyle
+
+        window.__scrollEnabled = true
     }
 
     /**
@@ -55,6 +57,8 @@ export function useLayout() {
         bodyStyle.right = '0'
         bodyStyle.width = '100%'
         bodyStyle.overflow = 'hidden'
+
+        window.__scrollEnabled = false
     }
 
     /**
