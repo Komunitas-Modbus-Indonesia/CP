@@ -8,13 +8,11 @@ $min-contrast-ratio: 1.5 !default;
 $font-family-base: "Saira", sans-serif;
 $headings-font-family: "Patua One", sans-serif;
 
-/** Bootstrap Colors **/
-$primary: #ff5900;
-$dark: #212529;
-$success: #038600;
-$light: #fcfcfc;
-$white: white;
-
+/** KMI Brand Identity (Main: Biru & Putih) **/
+$primary: #2563EB; /* Biru terang untuk tombol seperti 'FIND OUT MORE' */
+$dark: #0B1120;    /* Ini Biru Navy pekat, BUKAN hitam (#212529) */
+$light: #F8FAFC;
+$white: #FFFFFF;
 /** General **/
 $background-color: #fefefe;
 $nav-background-color: $dark;

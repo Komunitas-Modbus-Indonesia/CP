@@ -1,7 +1,7 @@
 <template>
     <!-- Navigation -->
-    <Navigation logo="images/logo/agency-logo-small.png"
-                label="*Foxy* Template"/>
+    <Navigation logo="images/logo/logomain.png"
+                label="*Modbus* Indonesia"/>
 
     <!-- Content Display -->
     <router-view/>
