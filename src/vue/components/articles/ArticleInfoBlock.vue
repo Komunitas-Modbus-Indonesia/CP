@@ -43,9 +43,9 @@ article.foxy-info-block-article {
 
 div.image-wrapper {
     @include generate-dynamic-styles-with-hash((
-        xxxl: (min-width: 380px, margin-right: 4rem),
-        xxl:  (min-width: min(33vw, 300px), margin-right: 3.5rem),
-        lg:   (min-width: 0, margin-right:0, margin-bottom:2rem, max-width:40vw, max-height:200px)
+        xxxl: (min-width: 250px, max-width: 300px, margin-right: 4rem),
+        xxl:  (min-width: 220px, max-width: 280px, margin-right: 3.5rem),
+        lg:   (min-width: 0, margin-right:0, margin-bottom:2rem, max-width:250px, max-height:250px)
     ));
 
     display: flex;
