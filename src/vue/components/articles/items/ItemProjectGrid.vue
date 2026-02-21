@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="foxy-project-item-description-wrapper">
+        <div v-if="props.category" class="foxy-project-item-description-wrapper">
             <button class="foxy-project-item-title"
                     v-html="props.title"/>
 
