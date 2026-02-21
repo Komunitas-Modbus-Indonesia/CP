@@ -1,7 +1,7 @@
 <template>
     <!-- Navigation -->
-    <Navigation logo="images/logo/logomain.png"
-                label="*Modbus* Indonesia"/>
+    <Navigation logo="images/logo/KMImain.png"
+                label=""/>
 
     <!-- Content Display -->
     <router-view/>
