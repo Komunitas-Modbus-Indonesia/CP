@@ -19,7 +19,10 @@
                     v-html="parsedSubtitle"/>
 
                 <!-- Button -->
-                <Link v-if="showButton"
+                <div v-if="$slots.buttons" class="mt-4">
+                    <slot name="buttons"/>
+                </div>
+                <Link v-else-if="showButton"
                       :url="props.buttonUrl">
                     <XLButton :label="buttonLabel"
                               :icon="buttonIcon"
