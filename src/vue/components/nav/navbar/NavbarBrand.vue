@@ -68,8 +68,8 @@ div.foxy-navbar-brand {
 
 img.foxy-navbar-brand-img {
     @include generate-dynamic-styles-with-hash((
-        xxxl: (height: 3.4rem, width: 3.4rem),
-        lg:   (height: 3rem, width: 3rem)
+        xxxl: (height: 4.5rem, width: 4.5rem),
+        lg:   (height: 4.5rem, width: 4.5rem)
     ));
 
     position: relative;
@@ -89,15 +89,15 @@ img.foxy-navbar-brand-img {
 div.foxy-navbar-brand-expand {
     font-size: 1.5rem;
     img.foxy-navbar-brand-img {
-        width: 3.4rem;
-        height: 3.4rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
     @include media-breakpoint-down(xl) {
         font-size: 1.45rem;
         img.foxy-navbar-brand-img {
-            width: 3.2rem;
-            height: 3.2rem;
+            width: 4.5rem;
+            height: 4.5rem;
         }
     }
 }
