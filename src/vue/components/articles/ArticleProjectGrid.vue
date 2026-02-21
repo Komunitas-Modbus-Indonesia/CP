@@ -1,7 +1,7 @@
 <template>
     <article class="foxy-project-grid-article row g-0 text-center">
         <!-- Filters -->
-        <div class="col-12 mb-2">
+        <div v-if="!props.hideFilters" class="col-12 mb-2">
             <FilterTabs :items="categories"
                         @selected="_onCategorySelected"/>
         </div>
@@ -11,7 +11,7 @@
             <div class="foxy-project-grid row mb-4">
                 <div v-for="(item, index) in filteredItems"
                      :key="index"
-                     class="foxy-project-grid-item-wrapper col-4 col-lg-3 text-center">
+                     :class="props.hideFilters ? 'foxy-project-grid-item-wrapper col-6 col-md-4 col-lg-3 text-center' : 'foxy-project-grid-item-wrapper col-4 col-lg-3 text-center'">
                     <component :is="item"
                                :index="index"
                                :transition-count="refreshTimes"/>
@@ -31,6 +31,13 @@ const strings = useStrings()
 const layout = useLayout()
 const slots = useSlots()
 
+const props = defineProps({
+    hideFilters: {
+        type: Boolean,
+        default: false
+    }
+})
+
 const selectedCategoryId = ref(null)
 const refreshTimes = ref(0)
 
@@ -42,6 +49,10 @@ const filteredItems = computed(() => {
     const allItems = items.value
     if(!allItems || allItems.length === 0)
         return []
+
+    // If filters are hidden, show all items
+    if(props.hideFilters)
+        return allItems
 
     return allItems.filter(item => {
         return item.props.category === selectedCategoryId.value
