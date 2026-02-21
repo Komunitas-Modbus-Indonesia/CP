@@ -7,7 +7,7 @@
 
         <!-- Question Content -->
         <div class="foxy-item-faq-question-content">
-            <h5 class="foxy-item-faq-question-title lead-2"
+            <h5 class="foxy-item-faq-question-title lead-2 text-primary"
                 v-html="parsedQuestion"/>
 
             <p class="foxy-item-faq-question-answer text-4 text-light-7"
