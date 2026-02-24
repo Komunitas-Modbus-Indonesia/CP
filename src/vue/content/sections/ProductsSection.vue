@@ -99,7 +99,7 @@ const products = ref([
    Section
 ───────────────────────────────────────── */
 .products-section {
-    background-color: #F8FAFC;
+    background-color: #ffffff;
     padding: 5rem 0;
 }
 
