@@ -48,7 +48,7 @@ import PageSectionContent from "/src/vue/components/layout/PageSectionContent.vu
 
 const props = defineProps({ id: String })
 
-const activeIndex = ref(0)
+const activeIndex = ref(null)
 
 const toggle = (index) => {
     activeIndex.value = activeIndex.value === index ? null : index
@@ -63,17 +63,13 @@ const faqs = [
         question: 'Siapa saja yang bisa bergabung dengan komunitas ini?',
         answer:   'Keanggotaan terbuka untuk <b>semua kalangan!</b> Mulai dari mahasiswa/pelajar yang baru belajar mikrokontroler, engineer pabrik, system integrator, hingga vendor teknologi yang memiliki ketertarikan di bidang otomasi industri.',
     },
-    {
-        question: 'Apakah ada biaya untuk menjadi anggota KMI?',
-        answer:   'Bergabung dengan grup diskusi utama kami (Telegram/WhatsApp) sepenuhnya <b>gratis</b>. Namun, untuk acara khusus seperti SILANAS, sertifikasi, atau technical workshop luring (offline), mungkin akan dikenakan biaya registrasi untuk keperluan operasional acara.',
-    },
+   {
+    question: 'Apakah ada biaya untuk menjadi anggota KMI?',
+    answer: 'KMI menyediakan 2 jenis keanggotaan: <b>Biasa</b> dan <b>Premium</b>.<br><br>Untuk <b>Membership Biasa</b> sepenuhnya <b>gratis</b>, Anda dapat bergabung ke dalam grup diskusi kami (WhatsApp) dan mengikuti media sosial kami.<br><br>Sedangkan untuk <b>Membership Premium</b>, Anda akan mendapatkan berbagai keuntungan tambahan seperti diskon untuk acara khusus (SILANAS, sertifikasi, atau workshop luring), akses ke <i>source code</i>, modul pembelajaran, dan fasilitas lainnya.<br><br>Untuk informasi lebih lanjut mengenai detail harga dan pendaftaran membership Premium, silakan hubungi <i>Contact Person</i> (CP) kami.',
+},
     {
         question: 'Bagaimana cara membagikan riset atau project open-source saya?',
         answer:   'Kami sangat mendukung semangat <b>open-source!</b> Anda bisa membagikan repository GitHub, topologi IoT, atau studi kasus integrasi SCADA langsung ke grup forum, atau menghubungi pengurus untuk mempresentasikannya pada sesi kopdar/workshop bulanan kami.',
-    },
-    {
-        question: 'Apakah ada paket keanggotaan berbayar di KMI?',
-        answer:   'Ya! KMI menyediakan <b>Premium Membership</b> bagi anggota yang ingin mendapatkan manfaat lebih. Dengan menjadi anggota premium, Anda akan mendapatkan akses ke <b>pelatihan eksklusif</b>, <b>source code</b> project industri siap pakai, serta <b>modul-modul Trainer Kit</b> yang dirancang khusus untuk mempercepat proses belajar implementasi Modbus dan IIoT. Hubungi pengurus kami untuk informasi lebih lanjut mengenai paket dan harganya.',
     },
 ]
 </script>
