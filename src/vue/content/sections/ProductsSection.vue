@@ -59,16 +59,16 @@ const base = import.meta.env.BASE_URL
 const img  = (file) => `${base}images/products/${file}`
 
 // WhatsApp number — update to the community's WA number
-const WA_NUMBER = '6281234567890'
+const WA_NUMBER = '6281555305255'
 const waLink = (productName) =>
     `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Halo, saya tertarik dengan produk: ${productName}`)}`
 
 const products = ref([
     {
-        name:        'IMLoRa Gateway & Modbus Node',
-        description: 'Sistem akuisisi data nirkabel berbasis LoRa untuk sensor Modbus RTU.',
+        name:        'SIMOR(Simple Modbus RTU)',
+        description: 'Modul Gateway/Data Concentrator peralatan IED yang mempunyai protocol modbus rtu, Modbus TCP IP, lalu datanya diconvert menjadi protocol modbus TCP IP, Telegram, Iot Blynk, IEC60870-5-104 atau MQTT.',
         image:       img('product1.jpeg'),
-        waLink:      waLink('IMLoRa Gateway & Modbus Node'),
+        waLink:      waLink('SIMOR(Simple Modbus RTU)'),
     },
     {
         name:        'THM-30MD RS485 Module',
