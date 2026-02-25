@@ -68,6 +68,8 @@ const sponsors = ref([
     { name: '',                      logo: img('sponsor8.png') },
     { name: '',    logo: img('sponsor9.png') },
     { name: '',                           logo: img('sponsor10.png') },
+    { name: '',                    logo: img('sponsor11.png') },
+    { name: '',                     logo: img('sponsor12.png') },
 ])
 
 /**
