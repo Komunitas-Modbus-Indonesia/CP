@@ -7,7 +7,7 @@
                 <!-- Event Poster Column - Order 1 on mobile, Order 2 on desktop -->
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <div class="event-poster">
-                        <img src="/images/event/flyersilanas.png" 
+                        <img src="/images/event/silanasevents.jpeg" 
                              alt="SILANAS 7 Event Poster" 
                              class="img-fluid rounded-3 shadow-lg">
                     </div>

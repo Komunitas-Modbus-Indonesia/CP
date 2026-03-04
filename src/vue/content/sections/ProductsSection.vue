@@ -67,7 +67,7 @@ const products = ref([
     {
         name:        'SIMOR(Simple Modbus RTU)',
         description: 'Modul Gateway/Data Concentrator peralatan IED yang mempunyai protocol modbus rtu, Modbus TCP IP, lalu datanya diconvert menjadi protocol modbus TCP IP, Telegram, Iot Blynk, IEC60870-5-104 atau MQTT.',
-        image:       img('product1.jpeg'),
+        image:       img('productsimor.jpeg'),
         waLink:      waLink('SIMOR(Simple Modbus RTU)'),
     },
     {
