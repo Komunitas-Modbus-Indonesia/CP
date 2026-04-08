@@ -23,7 +23,7 @@
                            :include-divider="true"
                            button-label="Join Us"
                            button-fa-icon="fa-solid fa-user-plus"
-                           button-url="https://web.facebook.com/share/g/18GmXGAkYV/"/>
+                           button-url="https://bit.ly/registrasiKMI"/>
     </PageSection>
 </template>
 
